@@ -1,5 +1,5 @@
 <div align="center" id="madewithlua">
-    <img src="../.github/cpp_template_logo.png" width="110", height="100">
+    <img src=".github/cpp_template_logo.png" width="110", height="100">
 </div>
 
 <h1 align="center">C++ Simple Template</h1>
