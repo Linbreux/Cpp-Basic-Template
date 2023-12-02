@@ -50,5 +50,8 @@ if(Boost_FOUND)
   target_link_libraries(${CMAKE_PROJECT_NAME} ${Boost_LIBRARIES})
 endif()
 
-target_link_libraries(${CMAKE_PROJECT_NAME} nlohmann_json::nlohmann_json
-                      spdlog::spdlog yaml-cpp protobuf)
+target_link_libraries(${CMAKE_PROJECT_NAME} 
+                      nlohmann_json::nlohmann_json
+                      spdlog::spdlog
+                      yaml-cpp
+                      protobuf )
