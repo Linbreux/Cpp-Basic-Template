@@ -1,5 +1,8 @@
 # Add main.cpp file of project root directory as source file
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES 
+  main.cpp
+  sources/utils.cpp
+)
 
 # spdlogger
 if(NOT TARGET spdlog)

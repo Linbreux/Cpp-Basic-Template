@@ -1,5 +1,6 @@
 #include <iostream>
+#include "headers/utils.hpp"
 
 int main(){
-  std::cout << "Hello world!";
+  std::cout <<  helper::getHelloWorld();
 }

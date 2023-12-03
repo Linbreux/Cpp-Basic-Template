@@ -19,6 +19,7 @@ pkgs.stdenv.mkDerivation {
     pkgs.protobuf
     pkgs.gnulib
     pkgs.nlohmann_json
+    pkgs.catch2_3
   ];
 
   nativeBuildInputs = [ pkgs.gcc12 pkgs.pkg-config ];
@@ -35,7 +36,7 @@ pkgs.stdenv.mkDerivation {
 
   installPhase = ''
     mkdir -p $out/bin
-    mv bin/${project_name} $out/bin
+    mv bin/* $out/bin
     cp compile_commands.json $out/
   '';
 
