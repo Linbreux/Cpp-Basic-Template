@@ -6,7 +6,7 @@ in
 pkgs.stdenv.mkDerivation {
   name = project_name;
   pname = project_name;
-  src = ./src;
+  src = ./.;
 
   buildInputs = [
     pkgs.stdenv.cc.cc.lib
@@ -35,7 +35,7 @@ pkgs.stdenv.mkDerivation {
 
   installPhase = ''
     mkdir -p $out/bin
-    mv ${project_name} $out/bin
+    mv bin/${project_name} $out/bin
     cp compile_commands.json $out/
   '';
 
